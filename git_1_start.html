@@ -1,0 +1,42 @@
+<div>
+	<div id="gwl_main">
+		<div class="gwl_tab" title="Location"> 
+          <label style="font-size: initial;">Location Details</label>
+          <br>
+          <p style="color: rgba(255, 255, 255, 0.7);font-size: small;margin-top: 10px;">Manually enter information about the location, select a location on the map, or upload a (.xlsx)file to insert location details.</p>
+	      <div style="margin-left: 20%;"><!--#222222-->
+	          <button style="border-radius: 15px;" id="selLoctn_gwl" class="gwl_tool"  data-dojo-type="dijit/form/Button">
+	          		<b>Select a Location on the Map</b>
+	          </button>
+	      </div>
+	      <div style="display: grid;color: dimgray;font-size: medium;">
+	            <span id="Coordinates_gwl"  style="color: ivory;margin-bottom: 8px;margin-top: 8px;" data-dojo-attach-point="Coordinates">Get Coordinates
+	              <br></span>
+	          <div>
+	             <input type="text" readonly id="lat_gwl" size="2" style="width: 45%;height: 30px;color:aliceblue;font-size:initial;
+	             background-color: transparent;" value="" />
+	             <input type="text" readonly id="long_gwl" size="2" style="width: 45%;height: 30px;color:aliceblue;font-size:initial;
+	             background-color: transparent;" value="" />
+	          </div>        
+	      </div>  
+	      <br>
+	      <div style="color: ivory;font-size: medium;width: 90%;">
+	          <span>Enter An Address</span>
+	          <div id="searchLocation_gwl" style="width: 400px !important;"></div>        
+	      </div>
+	        <div style="display: grid;color: dimgray;font-size: initial;width: 90%;">
+	          <span style="color: ivory;margin-bottom: 1.5%;margin-top: 1.5%;">Choose State</span>
+	          <div data-dojo-attach-point="lineType_gwl"></div>       
+	        </div>
+	        <div style="display: grid;color: dimgray;font-size: initial;width: 90%;">
+	          <span style="color: ivory;margin-bottom: 1.5%;margin-top: 1.5%;">Choose District</span>
+	          <div data-dojo-attach-point="Location_District_gwl"></div>        
+	        </div>
+	        <div style="display: grid;color: dimgray;font-size: initial;width: 90%;">
+	          <span style="color: ivory;margin-bottom: 1.5%;margin-top: 1.5%;">Choose Block</span>
+	          <div data-dojo-attach-point="Location_Block_gwl"></div>       
+	        </div>	        	      
+		</div>
+		<div class="gwl_tab" title="Rainfall">Rainfall Tab yet to be updated</div>		
+	</div>
+</div>
